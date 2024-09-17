@@ -1,0 +1,3 @@
+config:
+  guestbook_name: "MyPopRock Festival 2.0"
+  backend_uri: "http://backend.{{ .Release.Namespace }}.svc.cluster.local/guestbook"
