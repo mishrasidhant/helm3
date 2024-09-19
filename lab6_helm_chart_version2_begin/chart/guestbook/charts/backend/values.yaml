@@ -1,0 +1,10 @@
+image:
+  repo: phico/backend
+  tag: "2.0"
+replicaCount: 1
+service:
+  type: NodePort
+  port: 80
+  nodePort: 31001
+ingress:
+  host: backend.lab.local

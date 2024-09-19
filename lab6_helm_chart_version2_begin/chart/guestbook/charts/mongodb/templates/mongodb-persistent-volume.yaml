@@ -1,11 +1,11 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: mongodb-pv-volume
+  name: {{ .Release.Name }}-{{ .Chart.Name }}-pv
   labels:
-    type: local
+    type: local # Should this be a variable?
 spec:
-  storageClassName: manual
+  storageClassName: manual # Make this configurable with logic
   capacity:
     storage: 100Mi 
   accessModes:

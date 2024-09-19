@@ -1,0 +1,8 @@
+pvc:
+  storageClassName: manual
+  resources:
+    requests:
+      storage: 100Mi
+service:
+  nodePort: 31002
+  type: NodePort
